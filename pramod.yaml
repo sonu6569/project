@@ -1,0 +1,8 @@
+hosts: dev, qa
+  user: ansible
+  become: yes
+  connection: ssh
+  gather_facts: yes
+  tasks:
+    - name: copy
+      action: copy src=LoginWebApp.war dest=/home/ansible/project
