@@ -1,4 +1,4 @@
-hosts: dev, qa
+- hosts: dev, qa
   user: ansible
   become: yes
   connection: ssh
