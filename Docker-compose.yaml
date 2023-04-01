@@ -1,0 +1,9 @@
+version: "3"
+services:
+  apache:
+    images: tomcat:9
+    container_name: apache-dev-server
+    ports:
+    - "8080:80"
+    volume:
+    - ./project/wars:/usr/local/tomcat/webapps
