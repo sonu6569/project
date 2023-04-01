@@ -5,4 +5,8 @@
   gather_facts: yes
   tasks:
     - name: copy
-      action: copy src=LoginWebApp.war dest=/home/ansible/project
+      action: copy src=LoginWebApp.war dest=/project/wars
+    - name:install
+      action: yum pkg=docker state=present
+    - name:service
+      action: service name=docker state=started
