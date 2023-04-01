@@ -1,0 +1,8 @@
+- hosts: dev
+  user: pramod
+  connection: ssh
+  become: yes
+  gather_facts: yes
+  tasks:
+    - name: copy
+      action: copy src=/home/pramod/git/project dest=/project/dockerfile

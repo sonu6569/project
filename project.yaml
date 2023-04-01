@@ -1,0 +1,9 @@
+- hosts: dev
+  user: pramod
+  connection: ssh
+  become: yes
+  gather_facts: yes
+  tasks:
+
+    - name: copywar
+      action: copy src=/project/wars/ dest=/project/wars/
