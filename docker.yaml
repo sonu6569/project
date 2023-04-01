@@ -5,4 +5,4 @@
   gather_facts: yes
   tasks:
     - name: copy
-      action: copy src=/home/pramod/git/project dest=/project/dockerfile
+      action: copy src=/home/pramod/git/project dest=/dockerfile
