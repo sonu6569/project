@@ -1,0 +1,9 @@
+version: "3"
+services:
+  apache:
+    image: tomcat:9
+    container_name: 23q1-application  
+    ports:
+    - "8082:8080"
+    volumes:
+    - /mnt:/usr/local/tomcat/webapps
