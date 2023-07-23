@@ -2,7 +2,7 @@ version: "3"
 services:
   apache:
     image: tomcat:9
-    container_name: 23q1-application  
+    container_name: sonu65691/23q1-application  
     ports:
     - "8082:8080"
     volumes:
